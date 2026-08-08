@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAZENDINHA - Painel Operacional v14</title>
+    <title>SÓ RAIZ - Painel Operacional v14</title>
     <style>
         :root {
-            --bg-body: #0b040d;
-            --bg-card: #130717;
-            --bg-card-alt: #1a0a20;
-            --border-pink: #d91b6c;
-            --pink-bright: #ff2a8d;
-            --pink-accent: #ff5da8;
-            --pink-muted: #e28ab3;
-            --pink-highlight-bg: rgba(255, 105, 180, 0.22);
-            --pink-highlight-border: rgba(255, 42, 141, 0.4);
+            --bg-body: #0a0900;
+            --bg-card: #141202;
+            --bg-card-alt: #1c1a05;
+            --border-yellow: #d4a017;
+            --yellow-bright: #ffd700;
+            --yellow-accent: #ffae00;
+            --yellow-muted: #d1b86e;
+            --yellow-highlight-bg: rgba(255, 215, 0, 0.15);
+            --yellow-highlight-border: rgba(255, 215, 0, 0.4);
             --text-main: #f8fafc;
-            --text-sub: #b392a8;
+            --text-sub: #b3a782;
             --accent-green: #00e676;
             --accent-yellow: #ffb300;
             --accent-red: #ff3d71;
@@ -44,10 +44,10 @@
             max-width: 1100px;
             width: 100%;
             background-color: var(--bg-card);
-            border: 2px solid var(--border-pink);
+            border: 2px solid var(--border-yellow);
             border-radius: 24px;
             padding: 28px;
-            box-shadow: 0 0 35px rgba(217, 27, 108, 0.25);
+            box-shadow: 0 0 35px rgba(212, 160, 23, 0.25);
         }
 
         .header-container {
@@ -57,9 +57,9 @@
 
         .sync-pill {
             display: inline-block;
-            background-color: rgba(217, 27, 108, 0.15);
-            border: 1px solid var(--border-pink);
-            color: var(--pink-accent);
+            background-color: rgba(255, 215, 0, 0.12);
+            border: 1px solid var(--border-yellow);
+            color: var(--yellow-bright);
             padding: 5px 16px;
             border-radius: 20px;
             font-size: 11px;
@@ -86,11 +86,11 @@
         .clan-title {
             font-size: 82px;
             font-weight: 900;
-            color: var(--pink-bright);
+            color: var(--yellow-bright);
             letter-spacing: 3px;
             text-transform: uppercase;
             -webkit-text-stroke: 1.5px #000000;
-            text-shadow: 0 0 10px rgba(255, 42, 141, 0.3);
+            text-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
             margin-bottom: 6px;
             line-height: 1.1;
         }
@@ -104,11 +104,11 @@
 
         .goal-banner {
             background: var(--bg-card-alt);
-            border: 1px solid rgba(217, 27, 108, 0.35);
+            border: 1px solid rgba(255, 215, 0, 0.35);
             border-radius: 18px;
             padding: 20px 24px;
             margin-bottom: 28px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
         }
 
         .goal-header {
@@ -123,7 +123,7 @@
         }
 
         .goal-title {
-            color: var(--pink-accent);
+            color: var(--yellow-bright);
             display: flex;
             align-items: center;
             gap: 8px;
@@ -138,16 +138,16 @@
         }
 
         .goal-values strong {
-            color: var(--pink-bright);
+            color: var(--yellow-bright);
             font-weight: 900;
         }
 
         .progress-bar-container {
             width: 100%;
             height: 36px;
-            background-color: #08020a;
+            background-color: #080701;
             border-radius: 18px;
-            border: 1.5px solid rgba(217, 27, 108, 0.4);
+            border: 1.5px solid rgba(255, 215, 0, 0.4);
             overflow: hidden;
             position: relative;
             box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.8);
@@ -155,10 +155,10 @@
 
         .progress-bar-fill {
             height: 100%;
-            width: 91.0%;
-            background: linear-gradient(90deg, #960c44, #ff2a8d, #ff6bb5);
+            width: 46.8%;
+            background: linear-gradient(90deg, #8a6d00, #ffd700, #fff080);
             border-radius: 18px;
-            box-shadow: 0 0 18px var(--pink-bright);
+            box-shadow: 0 0 18px var(--yellow-bright);
             transition: width 0.6s ease-in-out;
         }
 
@@ -175,7 +175,7 @@
             font-weight: 900;
             color: #ffffff;
             letter-spacing: 1px;
-            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0,0,0,0.8);
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
         }
 
         .metrics-row {
@@ -187,7 +187,7 @@
 
         .metric-box {
             background-color: var(--bg-card-alt);
-            border: 1px solid rgba(217, 27, 108, 0.25);
+            border: 1px solid rgba(255, 215, 0, 0.25);
             border-radius: 14px;
             padding: 16px;
             text-align: center;
@@ -195,7 +195,7 @@
         }
 
         .metric-box:hover {
-            border-color: var(--pink-bright);
+            border-color: var(--yellow-bright);
             transform: translateY(-2px);
         }
 
@@ -217,7 +217,7 @@
 
         .metric-extra {
             font-size: 11px;
-            color: var(--pink-accent);
+            color: var(--yellow-bright);
             margin-top: 4px;
             font-weight: 600;
         }
@@ -231,7 +231,7 @@
         }
 
         .podium-card {
-            background: linear-gradient(180deg, #1f0b24 0%, #130717 100%);
+            background: linear-gradient(180deg, #242005 0%, #141202 100%);
             border-radius: 16px;
             padding: 24px 16px;
             text-align: center;
@@ -247,12 +247,12 @@
 
         .podium-card.top2 {
             border: 1.5px solid var(--silver);
-            box-shadow: 0 0 25px rgba(224, 224, 224, 0.4);
+            box-shadow: 0 0 25px rgba(224, 224, 224, 0.3);
         }
 
         .podium-card.top3 {
             border: 1.5px solid var(--bronze);
-            box-shadow: 0 0 25px rgba(205, 127, 50, 0.4);
+            box-shadow: 0 0 25px rgba(205, 127, 50, 0.3);
         }
 
         .podium-badge {
@@ -279,7 +279,7 @@
         .podium-points {
             font-size: 19px;
             font-weight: 800;
-            color: var(--pink-bright);
+            color: var(--yellow-bright);
             font-family: monospace;
         }
 
@@ -291,14 +291,14 @@
 
         .table-card {
             background-color: var(--bg-card-alt);
-            border: 1px solid rgba(217, 27, 108, 0.25);
+            border: 1px solid rgba(255, 215, 0, 0.25);
             border-radius: 16px;
             overflow: hidden;
         }
 
         .table-controls {
             padding: 16px 20px;
-            border-bottom: 1px solid rgba(217, 27, 108, 0.15);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.15);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -307,14 +307,18 @@
         }
 
         .search-input {
-            background-color: #0b040d;
-            border: 1px solid rgba(217, 27, 108, 0.3);
+            background-color: #0a0900;
+            border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 8px;
             padding: 8px 14px;
             color: #ffffff;
             font-size: 13px;
             outline: none;
             min-width: 200px;
+        }
+
+        .search-input:focus {
+            border-color: var(--yellow-bright);
         }
 
         .filter-btn-group {
@@ -324,8 +328,8 @@
         }
 
         .f-btn {
-            background-color: #0b040d;
-            border: 1px solid rgba(217, 27, 108, 0.2);
+            background-color: #0a0900;
+            border: 1px solid rgba(255, 215, 0, 0.2);
             color: var(--text-sub);
             padding: 6px 12px;
             border-radius: 6px;
@@ -336,9 +340,10 @@
         }
 
         .f-btn:hover, .f-btn.active {
-            background-color: var(--pink-bright);
-            color: #ffffff;
-            border-color: var(--pink-bright);
+            background-color: var(--yellow-bright);
+            color: #000000;
+            font-weight: 700;
+            border-color: var(--yellow-bright);
         }
 
         table {
@@ -348,35 +353,35 @@
         }
 
         th {
-            background-color: #0f0511;
-            color: var(--pink-muted);
+            background-color: #0f0e02;
+            color: var(--yellow-muted);
             font-size: 11px;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.8px;
             padding: 12px 16px;
-            border-bottom: 1px solid rgba(217, 27, 108, 0.2);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
         }
 
         td {
             padding: 12px 16px;
-            border-bottom: 1px solid rgba(217, 27, 108, 0.1);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
             font-size: 13px;
             color: var(--text-main);
             vertical-align: middle;
         }
 
         tr:hover td {
-            background-color: rgba(255, 42, 141, 0.1) !important;
+            background-color: rgba(255, 215, 0, 0.08) !important;
         }
 
         tr.high-scorer {
-            background-color: var(--pink-highlight-bg);
+            background-color: var(--yellow-highlight-bg);
         }
         tr.high-scorer td.td-name {
-            color: #ff80bf;
-            font-weight: 700;
-            text-shadow: 0 0 6px rgba(255, 42, 141, 0.3);
+            color: var(--yellow-bright);
+            font-weight: 800;
+            text-shadow: 0 0 6px rgba(255, 215, 0, 0.3);
         }
 
         .td-pos {
@@ -393,7 +398,7 @@
         .td-power {
             font-family: monospace;
             font-weight: 700;
-            color: var(--pink-accent);
+            color: var(--yellow-accent);
         }
 
         .td-points {
@@ -412,18 +417,18 @@
         .mini-bar-bg {
             width: 80px;
             height: 6px;
-            background-color: #0d040e;
+            background-color: #0a0900;
             border-radius: 4px;
             display: inline-block;
             vertical-align: middle;
             margin-right: 6px;
             overflow: hidden;
-            border: 1px solid rgba(217, 27, 108, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.2);
         }
 
         .mini-bar-fill {
             height: 100%;
-            background-color: var(--pink-bright);
+            background-color: var(--yellow-bright);
             border-radius: 4px;
         }
 
@@ -481,61 +486,61 @@
 
 <div class="main-frame">
     <div class="header-container">
-        <div class="sync-pill">SINCRONIZAÇÃO CONCLUÍDA (08/08/26 04:57)</div>
-        <div class="war-achievement">🏆 9x TOP1 GLOBAL NAS GUERRAS DE CLÃS</div>
-        <h1 class="clan-title">FAZENDINHA</h1>
-        <div class="clan-subtitle">Painel Analítico de Desempenho e Metas · Edição Rosa e Preto v14</div>
+        <div class="sync-pill">ÚLTIMA ATUALIZAÇÃO DOS DADOS: 08/08/2026 ÀS 16:12 (SEMANA 02-09/08)</div>
+        <div class="war-achievement">🏆 PAINEL OPERACIONAL DE ATIVIDADES</div>
+        <h1 class="clan-title">SÓ RAIZ</h1>
+        <div class="clan-subtitle">Painel Geral de Controle e Monitoramento de Metas · Edição Amarelo e Preto</div>
 
         <div class="goal-banner">
             <div class="goal-header">
                 <span class="goal-title">🎯 PROGRESSO DA META COLETIVA SEMANAL</span>
-                <span class="goal-values">Pontuação: <strong>73,141,338</strong> / Alvo: <strong>80,400,000</strong> pts</span>
+                <span class="goal-values">Pontuação Total: <strong>34,614,908</strong> / Alvo Coletivo: <strong>74,000,000</strong> pts</span>
             </div>
             <div class="progress-bar-container">
                 <div class="progress-bar-fill"></div>
-                <div class="progress-text-overlay">91.0% CONCLUÍDO (73,141,338 DE 80,400,000 PTS)</div>
+                <div class="progress-text-overlay">46.8% CONCLUÍDO (34,614,908 DE 74,000,000 PTS)</div>
             </div>
         </div>
     </div>
 
     <div class="metrics-row">
         <div class="metric-box">
-            <div class="metric-label">PONTUAÇÃO TOTAL SEMANAL</div>
-            <div class="metric-num">73,141,338</div>
-            <div class="metric-extra">LIDERANÇA GERAL: INVIS</div>
+            <div class="metric-label">PONTUAÇÃO TOTAL</div>
+            <div class="metric-num">34,614,908</div>
+            <div class="metric-extra">LÍDER: SRVOVO</div>
         </div>
         <div class="metric-box">
-            <div class="metric-label">META GLOBAL DESEJADA</div>
-            <div class="metric-num">80,400,000</div>
+            <div class="metric-label">META COLETIVA</div>
+            <div class="metric-num">74,000,000</div>
             <div class="metric-extra">SOMA DAS METAS INDIVIDUAIS</div>
         </div>
         <div class="metric-box">
-            <div class="metric-label">MEMBROS CADASTRADOS</div>
-            <div class="metric-num">29 / 30</div>
-            <div class="metric-extra">17 Bateram a Meta</div>
+            <div class="metric-label">MEMBROS ATIVOS</div>
+            <div class="metric-num">28 / 30</div>
+            <div class="metric-extra">1 Meta Batida | 2 Inativos</div>
         </div>
     </div>
 
     <div class="podium-section">
         <div class="podium-card top2">
             <div class="podium-badge">🥈 2º LUGAR SEMANAL</div>
-            <div class="podium-name">NALDO</div>
-            <div class="podium-points">3,599,396 pts</div>
-            <div class="podium-meta">Meta: 2,800,000 (128.5%)</div>
+            <div class="podium-name">OLIVEIRA04</div>
+            <div class="podium-points">2,112,904 pts</div>
+            <div class="podium-meta">Poder: 1346% | Meta: 2,800,000 (75.5%)</div>
         </div>
 
         <div class="podium-card top1">
             <div class="podium-badge">🥇 TOP 1 SEMANAL</div>
-            <div class="podium-name">INVIS</div>
-            <div class="podium-points">3,695,745 pts</div>
-            <div class="podium-meta">Meta: 2,800,000 (132.0%)</div>
+            <div class="podium-name">SRVOVO</div>
+            <div class="podium-points">2,362,645 pts</div>
+            <div class="podium-meta">Poder: 856% | Meta: 2,300,000 (102.7%)</div>
         </div>
 
         <div class="podium-card top3">
             <div class="podium-badge">🥉 3º LUGAR SEMANAL</div>
-            <div class="podium-name">HOBNOB</div>
-            <div class="podium-points">3,594,611 pts</div>
-            <div class="podium-meta">Meta: 2,800,000 (128.4%)</div>
+            <div class="podium-name">SHELDON</div>
+            <div class="podium-points">2,106,069 pts</div>
+            <div class="podium-meta">Poder: 1066% | Meta: 2,800,000 (75.2%)</div>
         </div>
     </div>
 
@@ -543,9 +548,9 @@
         <div class="table-controls">
             <input type="text" id="searchInput" class="search-input" placeholder="🔍 Buscar jogador..." onkeyup="filterTable()">
             <div class="filter-btn-group">
-                <button class="f-btn active" onclick="setFilter('todos', this)">Todos (29)</button>
-                <button class="f-btn" onclick="setFilter('concluido', this)">⚡ Meta Batida (17)</button>
-                <button class="f-btn" onclick="setFilter('pendente', this)">⚠️ Abaixo (10)</button>
+                <button class="f-btn active" onclick="setFilter('todos', this)">Todos (30)</button>
+                <button class="f-btn" onclick="setFilter('concluido', this)">⚡ Meta Batida (1)</button>
+                <button class="f-btn" onclick="setFilter('pendente', this)">⚠️ Abaixo (27)</button>
                 <button class="f-btn" onclick="setFilter('inativo', this)">💀 Inativos (2)</button>
             </div>
         </div>
@@ -556,7 +561,6 @@
                     <th>POS</th>
                     <th>JOGADOR</th>
                     <th>PODER (%)</th>
-                    <th>GRUPOS</th>
                     <th>PONTOS SEMANAIS</th>
                     <th>META INDIV.</th>
                     <th>PROGRESSO %</th>
@@ -564,438 +568,362 @@
                 </tr>
             </thead>
             <tbody>
-
                 <tr class="high-scorer" data-status="concluido">
                     <td class="td-pos">🥇 1</td>
-                    <td class="td-name">INVIS</td>
-                    <td class="td-power">3003%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,695,745</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">SRVOVO</td>
+                    <td class="td-power">856%</td>
+                    <td class="td-points">2,362,645</td>
+                    <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">132.0%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="high-scorer" data-status="concluido">
-                    <td class="td-pos">🥈 2</td>
-                    <td class="td-name">NALDO</td>
-                    <td class="td-power">1686%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,599,396</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">128.5%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="high-scorer" data-status="concluido">
-                    <td class="td-pos">🥉 3</td>
-                    <td class="td-name">HOBNOB</td>
-                    <td class="td-power">2058%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,594,611</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">128.4%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="high-scorer" data-status="concluido">
-                    <td class="td-pos">4</td>
-                    <td class="td-name">MACACO ALBINO</td>
-                    <td class="td-power">3037%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,523,318</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">125.8%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="high-scorer" data-status="concluido">
-                    <td class="td-pos">5</td>
-                    <td class="td-name">GUS</td>
-                    <td class="td-power">1518%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,331,684</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">119.0%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="high-scorer" data-status="concluido">
-                    <td class="td-pos">6</td>
-                    <td class="td-name">OMEGAVITIN</td>
-                    <td class="td-power">1809%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,283,625</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">117.3%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="high-scorer" data-status="concluido">
-                    <td class="td-pos">7</td>
-                    <td class="td-name">OZEHGOTA</td>
-                    <td class="td-power">1554%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,229,827</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">115.4%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="high-scorer" data-status="concluido">
-                    <td class="td-pos">8</td>
-                    <td class="td-name">TOBYMEUDOG</td>
-                    <td class="td-power">1460%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,184,065</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">113.7%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="high-scorer" data-status="concluido">
-                    <td class="td-pos">9</td>
-                    <td class="td-name">MAGNELO</td>
-                    <td class="td-power">1378%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">3,110,897</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">111.1%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="" data-status="concluido">
-                    <td class="td-pos">10</td>
-                    <td class="td-name">POSITIV</td>
-                    <td class="td-power">1361%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,974,867</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">106.2%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="" data-status="concluido">
-                    <td class="td-pos">11</td>
-                    <td class="td-name">NATHAN</td>
-                    <td class="td-power">1786%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,919,997</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">104.3%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="" data-status="concluido">
-                    <td class="td-pos">12</td>
-                    <td class="td-name">SIEGHART</td>
-                    <td class="td-power">1024%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,901,169</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">103.6%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="" data-status="concluido">
-                    <td class="td-pos">13</td>
-                    <td class="td-name">POOCH</td>
-                    <td class="td-power">1401%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,895,263</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">103.4%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="" data-status="concluido">
-                    <td class="td-pos">14</td>
-                    <td class="td-name">FEARLESS</td>
-                    <td class="td-power">1407%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,859,357</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">102.1%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="" data-status="concluido">
-                    <td class="td-pos">15</td>
-                    <td class="td-name">PODOMORINO</td>
-                    <td class="td-power">1256%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,836,076</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">101.3%</span>
-                    </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
-                </tr>
-                <tr class="" data-status="concluido">
-                    <td class="td-pos">16</td>
-                    <td class="td-name">RD2A</td>
-                    <td class="td-power">1390%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,807,277</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">100.3%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill green" style="width: 100%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">102.7%</span>
                     </td>
                     <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
-                    <td class="td-pos">17</td>
-                    <td class="td-name">NIGHTMARE</td>
-                    <td class="td-power">1517%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,701,838</td>
+                    <td class="td-pos">🥈 2</td>
+                    <td class="td-name">OLIVEIRA04</td>
+                    <td class="td-power">1346%</td>
+                    <td class="td-points">2,112,904</td>
                     <td class="td-meta">2,800,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 96.5%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">96.5%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 75.5%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">75.5%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">🥉 3</td>
+                    <td class="td-name">SHELDON</td>
+                    <td class="td-power">1066%</td>
+                    <td class="td-points">2,106,069</td>
+                    <td class="td-meta">2,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 75.2%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">75.2%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">4</td>
+                    <td class="td-name">FEITOZA</td>
+                    <td class="td-power">855%</td>
+                    <td class="td-points">1,893,108</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 82.3%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">82.3%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">5</td>
+                    <td class="td-name">INFECTED</td>
+                    <td class="td-power">846%</td>
+                    <td class="td-points">1,763,924</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 76.7%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">76.7%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">6</td>
+                    <td class="td-name">ARDENGUI</td>
+                    <td class="td-power">1111%</td>
+                    <td class="td-points">1,747,256</td>
+                    <td class="td-meta">2,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 62.4%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">62.4%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">7</td>
+                    <td class="td-name">MITSUKO</td>
+                    <td class="td-power">767%</td>
+                    <td class="td-points">1,732,445</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 75.3%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">75.3%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">8</td>
+                    <td class="td-name">TUGALUSO</td>
+                    <td class="td-power">833%</td>
+                    <td class="td-points">1,720,337</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 74.8%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">74.8%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">9</td>
+                    <td class="td-name">RANDIN</td>
+                    <td class="td-power">862%</td>
+                    <td class="td-points">1,640,983</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 71.3%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">71.3%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">10</td>
+                    <td class="td-name">MRMADRUGA</td>
+                    <td class="td-power">1042%</td>
+                    <td class="td-points">1,542,410</td>
+                    <td class="td-meta">2,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 55.1%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">55.1%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">11</td>
+                    <td class="td-name">BOOMBAP</td>
+                    <td class="td-power">846%</td>
+                    <td class="td-points">1,514,775</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 65.9%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">65.9%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">12</td>
+                    <td class="td-name">WILLSTIVE</td>
+                    <td class="td-power">1440%</td>
+                    <td class="td-points">1,435,029</td>
+                    <td class="td-meta">2,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 51.3%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">51.3%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">13</td>
+                    <td class="td-name">TILICO4FUN</td>
+                    <td class="td-power">1223%</td>
+                    <td class="td-points">1,318,904</td>
+                    <td class="td-meta">2,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 47.1%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">47.1%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">14</td>
+                    <td class="td-name">CRYY</td>
+                    <td class="td-power">967%</td>
+                    <td class="td-points">1,289,867</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 56.1%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">56.1%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">15</td>
+                    <td class="td-name">IGRIS</td>
+                    <td class="td-power">1227%</td>
+                    <td class="td-points">1,227,174</td>
+                    <td class="td-meta">2,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 43.8%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">43.8%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">16</td>
+                    <td class="td-name">CHIPSDEANGU</td>
+                    <td class="td-power">1173%</td>
+                    <td class="td-points">1,203,463</td>
+                    <td class="td-meta">2,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 43.0%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">43.0%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">17</td>
+                    <td class="td-name">SALMUS</td>
+                    <td class="td-power">717%</td>
+                    <td class="td-points">1,164,517</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 50.6%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">50.6%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">18</td>
-                    <td class="td-name">NCMARKIN</td>
-                    <td class="td-power">1328%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,619,881</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">MACSANO</td>
+                    <td class="td-power">679%</td>
+                    <td class="td-points">963,380</td>
+                    <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 93.6%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">93.6%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 41.9%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">41.9%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">19</td>
-                    <td class="td-name">BAPUPA</td>
-                    <td class="td-power">1446%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,448,401</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">IMPERAZADA</td>
+                    <td class="td-power">796%</td>
+                    <td class="td-points">911,052</td>
+                    <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 87.4%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">87.4%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 39.6%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">39.6%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">20</td>
-                    <td class="td-name">SALLIX</td>
-                    <td class="td-power">1118%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,395,130</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">LORDSOX</td>
+                    <td class="td-power">688%</td>
+                    <td class="td-points">892,278</td>
+                    <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 85.5%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">85.5%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 38.8%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">38.8%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
-                <tr class="" data-status="concluido">
+                <tr class="" data-status="pendente">
                     <td class="td-pos">21</td>
-                    <td class="td-name">MADX</td>
-                    <td class="td-power">857%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,335,721</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">JOAOSOUZA23</td>
+                    <td class="td-power">1043%</td>
+                    <td class="td-points">756,211</td>
+                    <td class="td-meta">2,800,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill green" style="width: 100%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">101.6%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 27.0%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">27.0%</span>
                     </td>
-                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">22</td>
-                    <td class="td-name">GUIGZ</td>
-                    <td class="td-power">888%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,113,161</td>
+                    <td class="td-name">ALISSONJAPAAH</td>
+                    <td class="td-power">418%</td>
+                    <td class="td-points">718,088</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 91.9%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">91.9%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 31.2%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">31.2%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">23</td>
-                    <td class="td-name">RAPOSINHA</td>
-                    <td class="td-power">976%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">2,112,648</td>
+                    <td class="td-name">KADINHOZIK</td>
+                    <td class="td-power">588%</td>
+                    <td class="td-points">591,455</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 91.9%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">91.9%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 25.7%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">25.7%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">24</td>
-                    <td class="td-name">SRKOSTON</td>
-                    <td class="td-power">1172%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">1,833,007</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">HORUS</td>
+                    <td class="td-power">831%</td>
+                    <td class="td-points">446,915</td>
+                    <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 65.5%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">65.5%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 19.4%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">19.4%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">25</td>
-                    <td class="td-name">LILBROV</td>
-                    <td class="td-power">1390%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">1,650,420</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">V1</td>
+                    <td class="td-power">535%</td>
+                    <td class="td-points">423,557</td>
+                    <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 58.9%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">58.9%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 18.4%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">18.4%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">26</td>
-                    <td class="td-name">RAGNAR</td>
-                    <td class="td-power">1648%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">1,315,314</td>
+                    <td class="td-name">F2PNUBNHO</td>
+                    <td class="td-power">1079%</td>
+                    <td class="td-points">325,028</td>
                     <td class="td-meta">2,800,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 47.0%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">47.0%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 11.6%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">11.6%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">27</td>
-                    <td class="td-name">TOMNUKY</td>
-                    <td class="td-power">888%</td>
-                    <td style="color: var(--text-sub);">ok</td>
-                    <td class="td-points">868,643</td>
+                    <td class="td-name">ALFREDO</td>
+                    <td class="td-power">559%</td>
+                    <td class="td-points">222,664</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill yellow" style="width: 37.8%;"></div>
-                        </div>
-                        <span style="font-weight: 700; font-size: 12px;">37.8%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 9.7%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">9.7%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="" data-status="pendente">
+                    <td class="td-pos">28</td>
+                    <td class="td-name">CORREIA</td>
+                    <td class="td-power">725%</td>
+                    <td class="td-points">28,471</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill yellow" style="width: 1.2%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">1.2%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="inativo">
-                    <td class="td-pos">28</td>
-                    <td class="td-name">LIMALUCAS</td>
-                    <td class="td-power">1484%</td>
-                    <td style="color: var(--text-sub);">ok</td>
+                    <td class="td-pos">29</td>
+                    <td class="td-name">HNZ</td>
+                    <td class="td-power">744%</td>
                     <td class="td-points">0</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill red" style="width: 0.0%;"></div>
-                        </div>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill red" style="width: 0.0%;"></div></div>
                         <span style="font-weight: 700; font-size: 12px;">0.0%</span>
                     </td>
                     <td><span class="status-pill badge-inativo">💀 Inativo</span></td>
                 </tr>
                 <tr class="" data-status="inativo">
-                    <td class="td-pos">29</td>
-                    <td class="td-name">JORGEMAROMBA</td>
-                    <td class="td-power">1311%</td>
-                    <td style="color: var(--text-sub);">ok</td>
+                    <td class="td-pos">30</td>
+                    <td class="td-name">NCSAMANTINHA</td>
+                    <td class="td-power">643%</td>
                     <td class="td-points">0</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg">
-                            <div class="mini-bar-fill red" style="width: 0.0%;"></div>
-                        </div>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill red" style="width: 0.0%;"></div></div>
                         <span style="font-weight: 700; font-size: 12px;">0.0%</span>
                     </td>
                     <td><span class="status-pill badge-inativo">💀 Inativo</span></td>
@@ -1005,7 +933,7 @@
     </div>
 
     <footer>
-        FAZENDINHA &bull; Painel Analítico de Desempenho e Metas &bull; Versão 14 Atualizada
+        SÓ RAIZ &bull; Painel Geral de Controle de Atividades e Metas &bull; Atualizado em 08/08/2026 às 16:12
     </footer>
 </div>
 
