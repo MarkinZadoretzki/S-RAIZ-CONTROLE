@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SÓ RAIZ - Painel Operacional v17</title>
+    <title>SÓ RAIZ - Painel Operacional v20</title>
     <style>
         :root {
             --bg-body: #0a0600;
@@ -13,8 +13,8 @@
             --orange-bright: #ff6d00;
             --orange-accent: #ff9100;
             --orange-muted: #e09e66;
-            --orange-highlight-bg: rgba(255, 109, 0, 0.15);
-            --orange-highlight-border: rgba(255, 109, 0, 0.4);
+            --orange-highlight-bg: rgba(255, 109, 0, 0.18);
+            --orange-highlight-border: rgba(255, 109, 0, 0.5);
             --text-main: #f8fafc;
             --text-sub: #b39b82;
             --accent-green: #00e676;
@@ -155,7 +155,7 @@
 
         .progress-bar-fill {
             height: 100%;
-            width: 58.2%;
+            width: 67.8%;
             background: linear-gradient(90deg, #993d00, #ff6d00, #ffaa00);
             border-radius: 18px;
             box-shadow: 0 0 18px var(--orange-bright);
@@ -372,16 +372,17 @@
         }
 
         tr:hover td {
-            background-color: rgba(255, 109, 0, 0.08) !important;
+            background-color: rgba(255, 109, 0, 0.12) !important;
         }
 
+        /* DESTAQUE LARANJA PARA TODOS OS JOGADORES COM >= 1.800.000 PONTOS */
         tr.high-scorer {
             background-color: var(--orange-highlight-bg);
         }
         tr.high-scorer td.td-name {
-            color: var(--orange-bright);
-            font-weight: 800;
-            text-shadow: 0 0 6px rgba(255, 109, 0, 0.3);
+            color: var(--orange-bright) !important;
+            font-weight: 900;
+            text-shadow: 0 0 8px rgba(255, 109, 0, 0.6);
         }
 
         .td-pos {
@@ -486,7 +487,7 @@
 
 <div class="main-frame">
     <div class="header-container">
-        <div class="sync-pill">ÚLTIMA ATUALIZAÇÃO DOS DADOS: 09/08/2026 (SEMANA 02-09/08)</div>
+        <div class="sync-pill">ÚLTIMA ATUALIZAÇÃO DOS DADOS: 14/08/2026 ÀS 20:15 (SEMANA 09-16/08)</div>
         <div class="war-achievement">🏆 PAINEL OPERACIONAL DE ATIVIDADES</div>
         <h1 class="clan-title">SÓ RAIZ</h1>
         <div class="clan-subtitle">Painel Geral de Controle e Monitoramento de Metas · Edição Laranja e Preto</div>
@@ -494,11 +495,11 @@
         <div class="goal-banner">
             <div class="goal-header">
                 <span class="goal-title">🎯 PROGRESSO DA META COLETIVA SEMANAL</span>
-                <span class="goal-values">Pontuação Total: <strong>43,032,224</strong> / Alvo Coletivo: <strong>74,000,000</strong> pts</span>
+                <span class="goal-values">Pontuação Total: <strong>40,948,806</strong> / Alvo Coletivo: <strong>60,400,000</strong> pts</span>
             </div>
             <div class="progress-bar-container">
                 <div class="progress-bar-fill"></div>
-                <div class="progress-text-overlay">58.2% CONCLUÍDO (43,032,224 DE 74,000,000 PTS)</div>
+                <div class="progress-text-overlay">67.8% CONCLUÍDO (40,948,806 DE 60,400,000 PTS)</div>
             </div>
         </div>
     </div>
@@ -506,41 +507,41 @@
     <div class="metrics-row">
         <div class="metric-box">
             <div class="metric-label">PONTUAÇÃO TOTAL</div>
-            <div class="metric-num">43,032,224</div>
-            <div class="metric-extra">LÍDER: SRVOVO</div>
+            <div class="metric-num">40,948,806</div>
+            <div class="metric-extra">LÍDER: SHELDON</div>
         </div>
         <div class="metric-box">
             <div class="metric-label">META COLETIVA</div>
-            <div class="metric-num">74,000,000</div>
+            <div class="metric-num">60,400,000</div>
             <div class="metric-extra">SOMA DAS METAS INDIVIDUAIS</div>
         </div>
         <div class="metric-box">
             <div class="metric-label">MEMBROS ATIVOS</div>
-            <div class="metric-num">30 / 30</div>
-            <div class="metric-extra">1 Meta Batida | 0 Inativos</div>
+            <div class="metric-num">27 / 30</div>
+            <div class="metric-extra">4 Metas Batidas | 3 Inativos</div>
         </div>
     </div>
 
     <div class="podium-section">
         <div class="podium-card top2">
             <div class="podium-badge">🥈 2º LUGAR SEMANAL</div>
-            <div class="podium-name">WILLSTIVE</div>
-            <div class="podium-points">2,338,811 pts</div>
-            <div class="podium-meta">Poder: 1451% | Meta: 2,800,000 (83.5%)</div>
+            <div class="podium-name">OLIVEIRA04</div>
+            <div class="podium-points">2,178,771 pts</div>
+            <div class="podium-meta">Poder: 1365% | Meta: 2,300,000 (94.7%)</div>
         </div>
 
         <div class="podium-card top1">
             <div class="podium-badge">🥇 TOP 1 SEMANAL</div>
-            <div class="podium-name">SRVOVO</div>
-            <div class="podium-points">2,974,665 pts</div>
-            <div class="podium-meta">Poder: 866% | Meta: 2,300,000 (129.3%)</div>
+            <div class="podium-name">SHELDON</div>
+            <div class="podium-points">2,190,335 pts</div>
+            <div class="podium-meta">Poder: 1112% | Meta: 2,300,000 (95.2%)</div>
         </div>
 
         <div class="podium-card top3">
             <div class="podium-badge">🥉 3º LUGAR SEMANAL</div>
-            <div class="podium-name">SHELDON</div>
-            <div class="podium-points">2,163,962 pts</div>
-            <div class="podium-meta">Poder: 1066% | Meta: 2,800,000 (77.3%)</div>
+            <div class="podium-name">MRMADRUGA</div>
+            <div class="podium-points">2,066,675 pts</div>
+            <div class="podium-meta">Poder: 1107% | Meta: 2,300,000 (89.9%)</div>
         </div>
     </div>
 
@@ -549,9 +550,9 @@
             <input type="text" id="searchInput" class="search-input" placeholder="🔍 Buscar jogador..." onkeyup="filterTable()">
             <div class="filter-btn-group">
                 <button class="f-btn active" onclick="setFilter('todos', this)">Todos (30)</button>
-                <button class="f-btn" onclick="setFilter('concluido', this)">⚡ Meta Batida (1)</button>
-                <button class="f-btn" onclick="setFilter('pendente', this)">⚠️ Abaixo (29)</button>
-                <button class="f-btn" onclick="setFilter('inativo', this)">💀 Inativos (0)</button>
+                <button class="f-btn" onclick="setFilter('concluido', this)">⚡ Meta Batida (4)</button>
+                <button class="f-btn" onclick="setFilter('pendente', this)">⚠️ Abaixo (23)</button>
+                <button class="f-btn" onclick="setFilter('inativo', this)">💀 Inativos (3)</button>
             </div>
         </div>
 
@@ -568,315 +569,317 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="high-scorer" data-status="concluido">
+                <!-- TODOS OS JOGADORES COM >= 1.800.000 PTS RECEBEM CLASS="HIGH-SCORER" -->
+                <tr class="high-scorer" data-status="pendente">
                     <td class="td-pos">🥇 1</td>
-                    <td class="td-name">SRVOVO</td>
-                    <td class="td-power">866%</td>
-                    <td class="td-points">2,974,665</td>
+                    <td class="td-name">SHELDON</td>
+                    <td class="td-power">1112%</td>
+                    <td class="td-points">2,190,335</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 95.2%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">95.2%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="high-scorer" data-status="pendente">
+                    <td class="td-pos">🥈 2</td>
+                    <td class="td-name">OLIVEIRA04</td>
+                    <td class="td-power">1365%</td>
+                    <td class="td-points">2,178,771</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 94.7%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">94.7%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="high-scorer" data-status="pendente">
+                    <td class="td-pos">🥉 3</td>
+                    <td class="td-name">MRMADRUGA</td>
+                    <td class="td-power">1107%</td>
+                    <td class="td-points">2,066,675</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 89.9%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">89.9%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="high-scorer" data-status="pendente">
+                    <td class="td-pos">4</td>
+                    <td class="td-name">ARDENGUI</td>
+                    <td class="td-power">1191%</td>
+                    <td class="td-points">2,046,307</td>
+                    <td class="td-meta">2,300,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 89.0%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">89.0%</span>
+                    </td>
+                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                </tr>
+                <tr class="high-scorer" data-status="concluido">
+                    <td class="td-pos">5</td>
+                    <td class="td-name">BOOMBAP</td>
+                    <td class="td-power">864%</td>
+                    <td class="td-points">1,988,908</td>
+                    <td class="td-meta">1,800,000</td>
+                    <td>
                         <div class="mini-bar-bg"><div class="mini-bar-fill green" style="width: 100%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">129.3%</span>
+                        <span style="font-weight: 700; font-size: 12px;">110.5%</span>
                     </td>
                     <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
                 </tr>
-                <tr class="" data-status="pendente">
-                    <td class="td-pos">🥈 2</td>
-                    <td class="td-name">WILLSTIVE</td>
-                    <td class="td-power">1451%</td>
-                    <td class="td-points">2,338,811</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 83.5%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">83.5%</span>
-                    </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
-                </tr>
-                <tr class="" data-status="pendente">
-                    <td class="td-pos">🥉 3</td>
-                    <td class="td-name">SHELDON</td>
-                    <td class="td-power">1066%</td>
-                    <td class="td-points">2,163,962</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 77.3%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">77.3%</span>
-                    </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
-                </tr>
-                <tr class="" data-status="pendente">
-                    <td class="td-pos">4</td>
-                    <td class="td-name">OLIVEIRA04</td>
-                    <td class="td-power">1349%</td>
-                    <td class="td-points">2,112,904</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 75.5%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">75.5%</span>
-                    </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
-                </tr>
-                <tr class="" data-status="pendente">
-                    <td class="td-pos">5</td>
-                    <td class="td-name">FEITOZA</td>
-                    <td class="td-power">879%</td>
-                    <td class="td-points">2,074,660</td>
-                    <td class="td-meta">2,300,000</td>
-                    <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 90.2%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">90.2%</span>
-                    </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
-                </tr>
-                <tr class="" data-status="pendente">
+                <tr class="high-scorer" data-status="pendente">
                     <td class="td-pos">6</td>
-                    <td class="td-name">TUGALUSO</td>
-                    <td class="td-power">833%</td>
-                    <td class="td-points">1,836,978</td>
+                    <td class="td-name">CHIPSDEANGU</td>
+                    <td class="td-power">1193%</td>
+                    <td class="td-points">1,979,294</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 79.9%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">79.9%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 86.1%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">86.1%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
-                <tr class="" data-status="pendente">
+                <tr class="high-scorer" data-status="concluido">
                     <td class="td-pos">7</td>
-                    <td class="td-name">ARDENGUI</td>
-                    <td class="td-power">1127%</td>
-                    <td class="td-points">1,823,148</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">TUGALUSO</td>
+                    <td class="td-power">851%</td>
+                    <td class="td-points">1,957,158</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 65.1%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">65.1%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill green" style="width: 100%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">108.7%</span>
                     </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
                 </tr>
-                <tr class="" data-status="pendente">
+                <tr class="high-scorer" data-status="concluido">
                     <td class="td-pos">8</td>
-                    <td class="td-name">RANDIN</td>
-                    <td class="td-power">874%</td>
-                    <td class="td-points">1,816,840</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">CRYY</td>
+                    <td class="td-power">994%</td>
+                    <td class="td-points">1,921,822</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 79.0%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">79.0%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill green" style="width: 100%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">106.8%</span>
                     </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
                 </tr>
-                <tr class="" data-status="pendente">
+                <tr class="high-scorer" data-status="concluido">
                     <td class="td-pos">9</td>
-                    <td class="td-name">MRMADRUGA</td>
-                    <td class="td-power">1059%</td>
-                    <td class="td-points">1,813,557</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">RANDIN</td>
+                    <td class="td-power">909%</td>
+                    <td class="td-points">1,895,296</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 64.8%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">64.8%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill green" style="width: 100%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">105.3%</span>
                     </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                    <td><span class="status-pill badge-sucesso">⚡ Meta Batida</span></td>
                 </tr>
-                <tr class="" data-status="pendente">
+                <!-- AGORA TAMBÉM DESTACADO EM LARANJA PELA REGRA (1.814.596 PTS >= 1.800.000) -->
+                <tr class="high-scorer" data-status="pendente">
                     <td class="td-pos">10</td>
-                    <td class="td-name">INFECTED</td>
-                    <td class="td-power">873%</td>
-                    <td class="td-points">1,812,525</td>
+                    <td class="td-name">JOAOSOUZA23</td>
+                    <td class="td-power">1080%</td>
+                    <td class="td-points">1,814,596</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 78.8%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">78.8%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 78.9%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">78.9%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">11</td>
-                    <td class="td-name">MITSUKO</td>
-                    <td class="td-power">787%</td>
-                    <td class="td-points">1,732,445</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">INFECTED</td>
+                    <td class="td-power">923%</td>
+                    <td class="td-points">1,727,006</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 75.3%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">75.3%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 95.9%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">95.9%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">12</td>
-                    <td class="td-name">BOOMBAP</td>
-                    <td class="td-power">851%</td>
-                    <td class="td-points">1,664,583</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">FEITOZA</td>
+                    <td class="td-power">950%</td>
+                    <td class="td-points">1,715,394</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 72.4%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">72.4%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 95.3%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">95.3%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">13</td>
                     <td class="td-name">HORUS</td>
-                    <td class="td-power">846%</td>
-                    <td class="td-points">1,629,960</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-power">851%</td>
+                    <td class="td-points">1,550,167</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 70.9%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">70.9%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 86.1%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">86.1%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">14</td>
                     <td class="td-name">SALMUS</td>
-                    <td class="td-power">724%</td>
-                    <td class="td-points">1,474,584</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-power">817%</td>
+                    <td class="td-points">1,448,672</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 64.1%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">64.1%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 80.5%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">80.5%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">15</td>
-                    <td class="td-name">IGRIS</td>
-                    <td class="td-power">1232%</td>
-                    <td class="td-points">1,458,835</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">MITSUKO</td>
+                    <td class="td-power">800%</td>
+                    <td class="td-points">1,402,620</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 52.1%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">52.1%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 77.9%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">77.9%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">16</td>
-                    <td class="td-name">TILICO4FUN</td>
-                    <td class="td-power">1237%</td>
-                    <td class="td-points">1,318,904</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">ANDYFRONT</td>
+                    <td class="td-power">706%</td>
+                    <td class="td-points">1,384,712</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 47.1%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">47.1%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 76.9%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">76.9%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">17</td>
-                    <td class="td-name">CRYY</td>
-                    <td class="td-power">967%</td>
-                    <td class="td-points">1,289,867</td>
+                    <td class="td-name">IGRIS</td>
+                    <td class="td-power">1296%</td>
+                    <td class="td-points">1,370,195</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 56.1%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">56.1%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 59.6%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">59.6%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">18</td>
-                    <td class="td-name">MACSANO</td>
-                    <td class="td-power">693%</td>
-                    <td class="td-points">1,266,674</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">LORDSOX</td>
+                    <td class="td-power">741%</td>
+                    <td class="td-points">1,349,240</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 55.1%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">55.1%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 75.0%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">75.0%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">19</td>
-                    <td class="td-name">LORDSOX</td>
-                    <td class="td-power">704%</td>
-                    <td class="td-points">1,242,872</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">IMPERAZADA</td>
+                    <td class="td-power">890%</td>
+                    <td class="td-points">1,327,807</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 54.0%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">54.0%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 73.8%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">73.8%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">20</td>
-                    <td class="td-name">CHIPSDEANGU</td>
-                    <td class="td-power">1178%</td>
-                    <td class="td-points">1,203,463</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">OVININIH</td>
+                    <td class="td-power">660%</td>
+                    <td class="td-points">1,173,218</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 43.0%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">43.0%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 65.2%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">65.2%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">21</td>
-                    <td class="td-name">KADINHOZIK</td>
-                    <td class="td-power">594%</td>
-                    <td class="td-points">1,106,553</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">MACSANO</td>
+                    <td class="td-power">733%</td>
+                    <td class="td-points">1,151,885</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 48.1%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">48.1%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 64.0%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">64.0%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">22</td>
-                    <td class="td-name">IMPERAZADA</td>
-                    <td class="td-power">818%</td>
-                    <td class="td-points">1,081,152</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">NCSAMANTINHA</td>
+                    <td class="td-power">703%</td>
+                    <td class="td-points">965,230</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 47.0%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">47.0%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 53.6%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">53.6%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">23</td>
-                    <td class="td-name">CORREIA</td>
-                    <td class="td-power">735%</td>
-                    <td class="td-points">1,079,920</td>
+                    <td class="td-name">WILLSTIVE</td>
+                    <td class="td-power">1504%</td>
+                    <td class="td-points">961,370</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 47.0%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">47.0%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 41.8%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">41.8%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">24</td>
-                    <td class="td-name">NCSAMANTINHA</td>
-                    <td class="td-power">692%</td>
-                    <td class="td-points">1,074,073</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-name">KADINHOZIK</td>
+                    <td class="td-power">689%</td>
+                    <td class="td-points">831,729</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 46.7%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">46.7%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 46.2%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">46.2%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">25</td>
-                    <td class="td-name">JOAOSOUZA23</td>
-                    <td class="td-power">1043%</td>
-                    <td class="td-points">932,725</td>
-                    <td class="td-meta">2,800,000</td>
+                    <td class="td-name">ALFREDO</td>
+                    <td class="td-power">582%</td>
+                    <td class="td-points">784,180</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 33.3%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">33.3%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 43.6%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">43.6%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
                 <tr class="" data-status="pendente">
                     <td class="td-pos">26</td>
-                    <td class="td-name">HNZ</td>
-                    <td class="td-power">749%</td>
-                    <td class="td-points">845,804</td>
+                    <td class="td-name">TILICO4FUN</td>
+                    <td class="td-power">1255%</td>
+                    <td class="td-points">657,021</td>
                     <td class="td-meta">2,300,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 36.8%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">36.8%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 28.6%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">28.6%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
@@ -884,56 +887,56 @@
                     <td class="td-pos">27</td>
                     <td class="td-name">ALISSONJAPAAH</td>
                     <td class="td-power">434%</td>
-                    <td class="td-points">718,088</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-points">408,097</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 31.2%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">31.2%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 22.7%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">22.7%</span>
                     </td>
                     <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
                 </tr>
-                <tr class="" data-status="pendente">
+                <tr class="" data-status="inativo">
                     <td class="td-pos">28</td>
+                    <td class="td-name">HNZ</td>
+                    <td class="td-power">749%</td>
+                    <td class="td-points">0</td>
+                    <td class="td-meta">1,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill red" style="width: 0.0%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">0.0%</span>
+                    </td>
+                    <td><span class="status-pill badge-inativo">💀 Inativo</span></td>
+                </tr>
+                <tr class="" data-status="inativo">
+                    <td class="td-pos">29</td>
+                    <td class="td-name">CORREIA</td>
+                    <td class="td-power">746%</td>
+                    <td class="td-points">0</td>
+                    <td class="td-meta">1,800,000</td>
+                    <td>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill red" style="width: 0.0%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">0.0%</span>
+                    </td>
+                    <td><span class="status-pill badge-inativo">💀 Inativo</span></td>
+                </tr>
+                <tr class="" data-status="inativo">
+                    <td class="td-pos">30</td>
                     <td class="td-name">V1</td>
                     <td class="td-power">535%</td>
-                    <td class="td-points">423,557</td>
-                    <td class="td-meta">2,300,000</td>
+                    <td class="td-points">0</td>
+                    <td class="td-meta">1,800,000</td>
                     <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 18.4%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">18.4%</span>
+                        <div class="mini-bar-bg"><div class="mini-bar-fill red" style="width: 0.0%;"></div></div>
+                        <span style="font-weight: 700; font-size: 12px;">0.0%</span>
                     </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
-                </tr>
-                <tr class="" data-status="pendente">
-                    <td class="td-pos">29</td>
-                    <td class="td-name">ALFREDO</td>
-                    <td class="td-power">566%</td>
-                    <td class="td-points">403,090</td>
-                    <td class="td-meta">2,300,000</td>
-                    <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 17.5%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">17.5%</span>
-                    </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
-                </tr>
-                <tr class="" data-status="pendente">
-                    <td class="td-pos">30</td>
-                    <td class="td-name">F2PNUBNHO</td>
-                    <td class="td-power">1079%</td>
-                    <td class="td-points">325,028</td>
-                    <td class="td-meta">2,800,000</td>
-                    <td>
-                        <div class="mini-bar-bg"><div class="mini-bar-fill orange" style="width: 11.6%;"></div></div>
-                        <span style="font-weight: 700; font-size: 12px;">11.6%</span>
-                    </td>
-                    <td><span class="status-pill badge-alerta">⚠️ Abaixo da Meta</span></td>
+                    <td><span class="status-pill badge-inativo">💀 Inativo</span></td>
                 </tr>
             </tbody>
         </table>
     </div>
 
     <footer>
-        SÓ RAIZ &bull; Painel Geral de Controle de Atividades e Metas &bull; Atualizado com base no relatório 'Raiz 0908 final.pdf'
+        SÓ RAIZ &bull; Painel Geral de Controle de Atividades e Metas &bull; Atualizado com destaque laranja absoluto para todos com &ge; 1.800.000 pts
     </footer>
 </div>
 
